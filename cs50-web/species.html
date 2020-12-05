@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="styles.css" rel="stylesheet">
+        <script defer src="app.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Seahorse Keepers</title>
+    </head>
+
+    <body>
+      <!-- Main navigation -->
+      <div id="dynamicheader"></div>
+      <main class="margins">
+            <h1>
+              Species and Care!
+            </h1>
+            <h2>
+              Learn more about how to choose the right species<br> and set up properly for long term care:
+            </h2>
+          <div class="mr-5 ml-5 mb-5">
+              <p>
+                 We suggest watching the HOW TO SET UP A SEAHORSE TANK video first!!
+              </p>
+              <div class="col-sm-4 offset-md-4 embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/QUDWEkEoUw0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+          </div>
+          <div class="mr-5 ml-5">
+              <p>
+                After watching the video, start learning by reading our CARE GUIDE articles and sign up for notifications!  <br>More articles will be added soon!
+              </p>
+              <h2>CARE GUIDE ARTICLES:</h2>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <div class="card text-white bg-primary mb-3">
+                  <h1 class="card-header">Choosing the right Seahorse</h1>
+                  <div class="card-body">
+                    <p class="card-text">Buying a healthy seahorse will make a huge difference!
+                    Learn more about choosing the right seahorse!</p>
+                    <a class="btn btn-light text-primary font-weight-bold" href="./captivebred.html">READ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 text-center">
+                <div class="card text-white bg-primary mb-3">
+                  <h1 class="card-header">Setting up for success</h1>
+                  <div class="card-body">
+                    <p class="card-text">Following our guidelines will help you avoid common mistakes!
+                    Learn more about setting up a successful tank!</p>
+                    <a class="btn btn-light text-primary font-weight-bold" href="./care.html">READ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 text-center">
+                <div class="card text-white bg-primary mb-3">
+                  <h1 class="card-header">More articles coming soon!</h1>
+                  <div class="card-body">
+                    <p class="card-text">Check back on this page often to see our new articles! Sign up to be notified when a new article is posted!</p>
+                    <button type="button" class="btn btn-light text-primary font-weight-bold" id="modalButton">SIGN UP</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                  <button id="closeButton" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-title text-center">
+                    <h4>Stay up to date!</h4>
+                    <p>Stay up to date with the latest Seahorse Keepers articles!</p>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <form onsubmit="greet(); return false;" class="form-inline subscribe-form" id="form">
+                        <div class="form-group">
+                          <label class="sr-only" for="email4">Email</label>
+                          <input type="text" class="form-control mr-2" id="name" placeholder="yourname@gmail.com">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                  </div>
+                  <div class="form-footer text-center">
+                     <span id="result"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="app.js"></script>
+      </main>
+    <div id="dynamicfooter"></div>
+    </body>
+</html>

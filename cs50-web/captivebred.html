@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="styles.css" rel="stylesheet">
+        <script defer src="app.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Seahorse Keepers</title>
+    </head>
+
+    <body>
+      <!-- Main navigation -->
+      <div id="dynamicheader"></div>
+      <div class="post-image">
+        <div class="overlay-text">
+          <h1>
+            SEAHORSE GUIDE
+          </h1>
+          <h2>
+            Choosing the right seahorse
+          </h2>
+          <a href="#main" class="btn btn-primary btn-large">Dive In</a>
+        </div>
+      </div>
+      <main class="margins">
+        <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                  <button id="closeButton" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-title text-center">
+                    <h4>Stay up to date!</h4>
+                    <p>Stay up to date with the latest Seahorse Keepers articles!</p>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <form onsubmit="greet(); return false;" class="form-inline subscribe-form" id="form">
+                        <div class="form-group">
+                          <label class="sr-only" for="email4">Email</label>
+                          <input type="text" class="form-control mr-2" id="name" placeholder="yourname@gmail.com">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                  </div>
+                  <div class="form-footer text-center">
+                     <span id="result"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-3 order-2" id="sticky-sidebar">
+                    <div class="sticky-top">
+                        <div class="nav flex-column">
+                          <div class="card bg-primary">
+                            <div class="card-body text-center">
+                              <p class="card-text">Read another CARE GUIDE article "Setting up for Success"</p>
+                              <a href="./care" class="btn btn-light">READ</a>
+                            </div>
+                          </div>
+                          <div class="card bg-primary">
+                            <div class="card-body text-center">
+                              <p class="card-text">Subscribe to hear about new articles!</p>
+                              <button id="modalButton" class="btn btn-light">SUBSCRIBE</a>
+                            </div>
+                          </div>
+                          <div class="card bg-primary">
+                            <div class="card-body text-center">
+                              <p class="card-text">Watch 10 Fascinating Seahorse Facts!</p>
+                              <a href="https://www.youtube.com/watch?v=haPjZ2QmqHg&t=90s" class="btn btn-light">WATCH</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="main">
+                  <p id="post-text">The idea that seahorses cannot be kept in a home aquarium is outdated.
+                  A decade ago, people struggled to keep seahorses in public aquariums, with little hope of ever seeing them in a home aquarium.
+                  But today, hobbyists all around the world are successfully keeping seahroses, even proving that seahorses can live even longer lives in an aquarium.
+                  Many of our members' seahorses live up to eight years, which is much longer than the year that scientists believed they could survive.
+                  The main reason for this is knowledge gained through experience. Our care guides aim to share this knowledge and experience to help even the
+                  newest seahorse keeper succeed!  This guide will cover the main things to consider when choosing which seahorse to keep.</p>
+                  <h3>
+                    Buy Captive Bred
+                  </h3>
+                  <div class="center-img">
+                    <img class="post-image3" src="https://cdn.pixabay.com/photo/2013/10/24/17/06/seahorse-200318_960_720.jpg" alt="erectus image">
+                  </div>
+                    <p id="post-text">
+                      The most important key to success with seahorses is starting out with a healthy seahorse.  The idea that seahorses were too difficult to
+                      keep in a home aquarium stemmed from stores selling wild-caught or net-pen (maricultured) raised seahorses.  Wild caught or net-pen seahorses (any species)
+                      often need to be treated in a quarantine tank for many weeks to be sure they do not have any illness or disease that came from living in ocean water.
+                      The stress of being captured and shipped leads to even more possible illnesses in these seahorses.  They often have not been weaned onto frozen
+                      foods, which means a keeper would need a supply of live feeds.  They are often not treated well by collectors and will arrive starving and stressed out.
+                      Not a good start for anyone new to seahorse keeping!</p>
+                    <p id="post-text">
+                      Captive bred seahorses are raised in a clean, sterile environment.  They are raised in an aquarium from birth, and weaned on to frozen foods at
+                      an early age.  They are used to seeing humans and used to living in an aquarium, which means your aquarium will not stress them out!
+                    </p>
+                    <p id="post-text">
+                      The species available in your area might limit which species you can purchase. Due to CITES regulations,
+                      shipping seahorses internationally is very difficult.  Will share some differences between the species, but check with your local reef club, in our
+                      facebook group, or a seahorse breeder in your area to determine which species have been captive bred and are available.
+                    </p>
+                  <h3>
+                    Common Seahorses
+                  </h3>
+                  <div class="center-img">
+                    <img class="post-image3" src="https://cdn.pixabay.com/photo/2014/07/18/18/07/seahorse-396596_960_720.jpg" alt="erectus image">
+                  </div>
+                    <p id="post-text">
+                      In the United States, the most commonly available captive bred seahorse species is H. erectus. Luckily, they are considered one of the
+                      easiest seahorses to keep.  H. erectus are hardy, friendly and do very well in a home aquarium. Others species available
+                      include: H. reidi, H. kuda, H. comes, H. abdominalis, H. zosterae.
+                      H. erectus, H. reidi, H. comes and H. kuda have similar <a href="./care.html">care requirements</a> and are all also hardy species that do
+                      well in the home aquarium given proper conditions. These four species reach approximately 6-8+ inches with maturity.
+                      But we recommend that someone new to seahorse keeping start with H. erectus, as they are the most friendly. They also breed quickly and their fry
+                      are benthic (meaning they hitch from birth and are easier to raise).  So
+                      if you are interested in breeding and raising seahorse fry, H. erectus is the species for you!
+                    </p>
+                  <h3>
+                    Dwarf Seahorses
+                  </h3>
+                  <div class="center-img">
+                    <img class="post-image3" src="https://images.unsplash.com/photo-1568605504495-2ac1d267a492?ixlib=rb-1.2.1&auto=format&fit=crop&w=1080&q=80" alt="erectus image">
+                  </div>
+                    <p id="post-text">
+                      Dwarf seahorses (H. zosterae) are much smaller seahorses that have different requirements.   Their maximum adult size is 1-1.5 inches.
+                      The bonus to keeping this species is that they
+                      are so small, that many can be kept in a much smaller aquarium.  An entire herd can be kept in a 10 gallon aquarium, versus the larger species that
+                      need a 30 gallon aquarium per pair minimum.  However, a dwarf seahorse is very similar to a seahorse fry.  They require live foods, so a hobbyist must
+                      be ready to hatch artemia for them on a daily basis.  They also cannot have any other tank mates, as many would eat them because they are so small.  Watch
+                      our <a href="https://youtu.be/E5jr3rwUEvI">dwarf video</a> to learn more about keeping this species!
+                    </p>
+
+                  <h3>
+                    Cold Water Species
+                  </h3>
+                  <div class="center-img">
+                    <img class="post-image3" src="https://images.unsplash.com/photo-1605123446481-d93e83ddbe74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="erectus image">
+                  </div>
+                    <p id="post-text">
+                      H. abdominalis is a cold-water species, which means their needs are different from the common species also. They are one of the largest
+                      species of seahorse, growing to 10-12 inches at maturity.  A hobbyist would need to keep this large size in mind when choosing an aquarium.  H. abdominalis
+                      will require at least a 100 gallon tank, and even bigger would be better.  They also require a temperature of 65-67 F, very
+                      different from the 68-74 F for the other common species.  This makes it very difficult to keep any tank mates or coral in their tank, as most other
+                      fish and coral prefer a much warmer aquarium.  A hobbyist must be ready to buy a chiller in order to keep H. abdominalis, and make it a species only
+                      tank. H. abdominalis is one of the prettiest species of seahorse, that can be raised easily if they are provided the right conditions.  Just be sure to
+                      research their needs before deciding on this species.
+                    </p>
+                  <h3>
+                    Stocking Density and Tank Size
+                  </h3>
+                  <div class="center-img">
+                    <img class="post-image3" src="https://images.unsplash.com/photo-1595503147345-445c90a74a0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1095&q=80" alt="erectus image">
+                  </div>
+                    <p id="post-text">
+                      Most seahorses are sold at 4-6 months old and are not full grown.  A keeper must plan ahead and buy a tank big enough to accomodate the 6-8+ inch adults that
+                      their seahorses will grow to very quickly.  The recommendation is 30 gallons per pair of seahorses.  However, bigger is always better.  Seahorses are very
+                      messy eaters, that eat more than the average fish and therefore produce more waste. Overstocking seahorses leads to a build up of organics, which often leads
+                      to sick seahorses.  Try to plan ahead and ensure that your aquarium is big enough to handle the seahorse bioload.
+                    </p>
+                    <p id="post-text">
+                      Many aquarists ask if they can put seahorses in their reef tank or sump.  Unfortunately, seahorses need a much lower temperature than other fish and coral
+                      prefer.  They also cannot be kept with any coral that stings or aggressive fish.  Read more about this in our <a href="./care.html">Setting up for Success
+                      </a> article.
+                    </p>
+                  <h3>
+                    Mixing Species
+                  </h3>
+                  <div class="center-img">
+                    <img class="post-image3" src="https://images.unsplash.com/photo-1568605504495-2ac1d267a492?ixlib=rb-1.2.1&auto=format&fit=crop&w=1080&q=80" alt="erectus image">
+                  </div>
+                    <p id="post-text">
+                      Many new keepers will be tempted to mix different species together in one aquarium.  Unfortunately, that rarely works out.  Seahorses from
+                      different parts of the world will have immunity to the different bacteria and parasites in the area from which they came.  If you add two species that
+                      come from different areas, they will not have immunity to the same pathogens.  Breeders raise seahorses in species only tanks, so even captive bred
+                      species from the same breeder should not be mixed. Seahorses have a primitive immune system and are more susceptible to bacterial related issues than
+                      to other fish, so they really should be kept in a species only tank with very limited tank mates of any kind.
+                    </p>
+                    <p id="post-text">
+                      The one exception to this rule is keeping H. erectus and H. reidi in the same aquarium.  They come from areas that are very close to one another and
+                      actually interbreed in the wild. Hobbyists have had the most luck mixing these two species, and a the species "H. erectus- H. reidi Hybrids" can
+                      now be purchased from many US breeders.
+                    </p>
+                  <h3>
+                    Additional Tips
+                  </h3>
+                  <div class="center-img">
+                    <img class="post-image3" src="https://images.unsplash.com/photo-1593924237840-7cf29772fcda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1080&q=80" alt="erectus image">
+                  </div>
+                  <p id="post-text">
+                    Seahorses will change color to blend in to their environment.  Never buy a seahorse based on color, as it will likely change.  A blue background on a tank
+                    tends to encourage seahorses to turn yellow.  A lot of grey colored rock will cause seahorses to turn a silver color.  And red or black items in the
+                    aquarium will cause seahorses to turn black.  A "Seahorse Color" article is coming soon, but in the meantime....always choose to buy healthy, captive bred
+                    seahorses that are incredible no matter their color!<br>
+                  </p>
+                  <p id="post-text">
+                    Also, read our <a href="./care.html">Setting up for Success</a> article to learn more about how to set up for seahorses!
+                  </p>
+                </div>
+            </div>
+        </div>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="app.js"></script>
+      </main>
+      <div id="dynamicfooter"></div>
+  </body>
+</html>

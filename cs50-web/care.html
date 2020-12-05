@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="styles.css" rel="stylesheet">
+        <script defer src="app.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Seahorse Keepers</title>
+    </head>
+
+    <body>
+      <!-- Main navigation -->
+      <div id="dynamicheader"></div>
+      <div class="post-image2">
+        <div class="overlay-text">
+          <h1>
+            SEAHORSE GUIDE
+          </h1>
+          <h2>
+            Setting up for success
+          </h2>
+            <a href="#main" class="btn btn-primary btn-large">Dive IN</a>
+        </div>
+      </div>
+      <main class="margins">
+          <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                  <button id="closeButton" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-title text-center">
+                    <h4>Stay up to date!</h4>
+                    <p>Stay up to date with the latest Seahorse Keepers articles!</p>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <form onsubmit="greet(); return false;" class="form-inline subscribe-form" id="form">
+                        <div class="form-group">
+                          <label class="sr-only" for="email4">Email</label>
+                          <input type="text" class="form-control mr-2" id="name" placeholder="yourname@gmail.com">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                  </div>
+                  <div class="form-footer text-center">
+                     <span id="result"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-3 order-2" id="sticky-sidebar">
+                    <div class="sticky-top">
+                        <div class="nav flex-column">
+                          <div class="card bg-primary">
+                            <div class="card-body text-center">
+                              <p class="card-text">Read another CARE GUIDE article "Choosing the right Seahorse"</p>
+                              <a href="./captivebred.html" class="btn btn-light">READ</a>
+                            </div>
+                          </div>
+                          <div class="card bg-primary">
+                            <div class="card-body text-center">
+                              <p class="card-text">Subscribe to hear about new articles!</p>
+                              <button id="modalButton" class="btn btn-light">SUBSCRIBE</a>
+                            </div>
+                          </div>
+                          <div class="card bg-primary">
+                            <div class="card-body text-center">
+                              <p class="card-text">Watch the tank set up video!</p>
+                              <a href="https://www.youtube.com/watch?v=QUDWEkEoUw0&t=1783s" class="btn btn-light">WATCH</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="main">
+                    <p id="post-text">
+                      Seahorses are magical fish that bring to mind mythical images of a sea monster and mermaid stallion all wrapped
+                      up in a little package with a horse shaped head.  They contradict all of the typical characteristics of a fish, with males giving birth
+                      to offspring and bony plates covering their body instead of scales.
+                      Their courting and reproduction behaviors have fascinated scientists, and people are always amazed at the sight of their graceful movements
+                      and synchronized, spinning dance towards the surface that aligns them perfectly for an egg exchange.  Saltwater aquarium hobbyists are constantly
+                      looking for exotic and unique fish to keep, so it's no surprise that seahorses have become so popular.  Keeping seahorses is not much harder than
+                      keeping any other saltwater tank, but there are some differences.
+                    </p>
+                    <p id="post-text">
+                      In this article, we will discuss
+                      how to set up the aquarium properly, and cover some tips for success!  These recommendations are for the typical large seahorses (H. erectus, H. kuda, H.
+                      H. comes, H. barbouri and H. reidi).  Coldwater or dwarf species have different needs, covered in our <a href="./captivebred.html">Choosing the right
+                      Seahorse</a> article.  Let's jump right in to setting up your first seahorse tank!
+                    </p>
+                    <h4>
+                      Overview:
+                    </h4>
+                    <ul>
+                      <li>
+                        <a href="#tank">Tank Setup</a>
+                      </li>
+                      <li>
+                        <a href="#et">Filtration, Equipment and Testing</a>
+                      </li>
+                      <li>
+                        <a href="#cycle">Proper Cycle</a>
+                      </li>
+                      <li>
+                        <a href="#temp">Temperature</a>
+                      </li>
+                      <li>
+                        <a href="#flow">Flow</a>
+                      </li>
+                      <li>
+                        <a href="#mates">Tank Mates</a>
+                      </li>
+                      <li>
+                        <a href="#feeding">Feeding</a>
+                      </li>
+                      <li>
+                        <a href="#maintenance">Maintenance</a>
+                      </li>
+                    </ul>
+                    <h3 id="tank">
+                      The Tank
+                    </h3>
+                    <div class="center-img">
+                      <img class="post-image3" src="https://cdn.pixabay.com/photo/2017/05/22/22/55/seahorse-2335646_960_720.jpg">
+                    </div>
+                    <h4>Tank Size</h4>
+                      <p id="post-text">
+                        The first step to a successful seahorse tank is to purchase a big enough aquarium!  The minimum tank size recommendation for a common pair of seahorses is 30 gallons.  Each additional pair will require
+                        another 30 gallons.  This recommendation is based on seahorse eating habits
+                        (see <a href="#feeding">Feeding section</a> for more information about how this affects the tank) and the growth rate of common species (they grow much larger after being
+                        purchased - up to 6-8+ inches in most species).
+                        Most seahorse keepers will also want more seahorses after they fall in love with their first pair. In addition, seahorses breed like rabbits, so if you're at all
+                        interested in allowing your pair to create more little seahorses, you're going to need more tank space and water volume.  The bottom line is that you certainly can
+                        set up a 30 gallon tank for 2 seahorses, but you won't be able to put much else in the tank.
+                        The more water you have, the more you can put in the tank with fewer long-term problems.  So go big!  One way to create more water volumne within a limited space is to add a sump underneath the
+                        tank.  A better description of a sump is provided in the <a href="#sump">Sump Info</a> section.  We personally recommend setting up a 60+ gallon tank with a large sump to help.
+                      </p>
+                    <h4>Aquascape</h4>
+                      <p id="post-text">
+                        The one thing that seahorses require is items to hitch upon.  Seahorses all have a prehensile tail that they use to grasp and hold on to items
+                        within the tank.  The idea that seahorses need a low flow situation is outdated (see <a href="#flow">FLOW</a> section for more
+                        info).  But, they DO need something to wrap their tail around (hitch to) in order to feel secure.  Depending on how you prefer your seahorse tank to
+                        look, hitching options could include artificial decorations like fake plants and plastic chains, live items that don't sting like gorgonians or macroalgae, or even
+                        branching rock for a more
+                        natural look.
+                      </p>
+                    <h3 id="et">
+                      Filtration, Equipment and Testing
+                    </h3>
+                    <div class="center-img">
+                      <img class="post-image3" src="https://cdn.pixabay.com/photo/2016/08/10/19/24/hydrometer-1584107_960_720.jpg">
+                    </div>
+                      <p id="post-text">
+                        Filtration in a seahorse tank is very important!  We discussed why more water volume and a bigger tank can help, but setting up proper filtration is
+                        essentially important!  Filtration is split into three types:  mechanical, biological and chemical.  Each has a seperate purpose that is important to a successful
+                        seahorse tank.  All three types are recommended, but biological and mechanical are essential.  Biological media are what the good nitrifying bacteria
+                        that is needed for the nitrogen cycle grow upon (the nitrogen cycle is explained further
+                        in the <a href="#cycle">Proper Cycle</a> section).  Mechanical filtration removes larger particles,
+                        so the biological filtration does not have to break down as much (example:  if a piece of food is captured and removed via mechanical filtration, the
+                        biological media no longer needs to break down and remove it).  Chemical filtration removes dissoved particulates and includes any carbons, resins or
+                        any other adsorbents used to remove impurities in the water.  This filtration method is typically only used in specific situations to alleviate an issue such as
+                        high phosphates or nitrates.
+                        Equally important to understand, we'll now talk about examples of each:
+                      </p>
+                        <h4>
+                          Biological
+                        </h4>
+                          <ul>
+                            <li>
+                              Rock - live rock would already have nitrifying bacteria living upon it, but you take the chance of it bringing other
+                              things that would not be welcome. Dry rock - technically rock that you buy "dry" and must cycle to grow or add beneficial bacteria.
+                              Cured rock - includes keeping rock in a bucket
+                              with high flow and no lighting, doing constant water changes to ensure anything bad is removed while beneficial bacteria remains.
+                            </li>
+                            <li>
+                              Manufactured media - brightwell bricks, k1, rubble, sponge filters, or any other porous media that bacteria can grow upon or within.
+                            </li>
+                          </ul>
+                        <h4>
+                          Mechanical
+                        </h4>
+                          <ul>
+                            <li>
+                              Floss or Sock - Floss could be added to a HOB filter, whereas a sock would be placed in the sump.  The job of each is to stop any larger pieces
+                              of waste from re-entering the tank.  Any of these items need to be changed regularly.
+                            </li>
+                            <li>
+                              Skimmer - People used to associate a skimmer with Gas Bubble Disease, but experience has shown that they are not related.  A skimmer is an
+                              ESSENTIAL part of a seahorse tank's filtration.  Not only does a skimmer oxygenate the tank, but it also removes things we never see.  We recommend
+                              buying a skimmer that is rated 2 times your tank size (for instance, a 30g aquarium would want a skimmer rated for 60g).
+                            </li>
+                            <li>
+                              UV sterilizer - A UV sterilizer uses ultraviolet lighting to kill algae and bacteria spores in the aquarium.  Most of the effective UVs are large, and can
+                              only be used in a sump situation.  The strength of the light and the length of time that water
+                              is exposed to the light determine how effective this method will work.  Research the flow rate through the UV sterilizer to maximize effectiveness!  This is
+                              not a required method of mechanical filtration, but it can be very effective in limiting nuisance algae growth and even limit bad bacteria that might
+                              bother your seahorses!  Be sure to place the UV after all other mechanical filtration in the sump, so that all large particles are already removed.
+                            </li>
+                          </ul>
+                        <h4>
+                          Chemical
+                        </h4>
+                          <ul>
+                            <li>
+                              Carbon - This media typically comes in ready made bags that you can throw into a sump or filter.  Activated carbon removes elements like copper,
+                              chlorine, dissolved proteins, antibiotics and discolorants.  However, this media can only "soak up" so much, so this type of filter media must
+                              be replaced often (based on manufacturer guidelines).
+                            </li>
+                            <li>
+                              Purigen - a synthetic adsorbent that removes soluble and insoluble impurities from the water.  It removes ammonia, nitrites and nitrates
+                              from the water by removing the nitogenous organic waste that result in each compound.  Purigen also raises redox and makes the aquarium
+                              water much clearer.  It needs to be replaced when the media turns brown (showing that it has "soaked up" so much waste).
+                            </li>
+                            <li>
+                              Ozone - for advanced aquarists. <a href="http://ozotech.com/the-benefits-of-ozone-in-aquariums/">Read More about ozone.</a>
+                            </li>
+                          </ul>
+                        <h4>
+                          Set up
+                        </h4>
+                        <p id="post-text">
+                          There are a couple different options to set up the seahorse tank to ensure that your biological and mechanical filtration is adequate:
+                        </p>
+                          <ul>
+                            <li>
+                              Stand alone tank with hob filtration - A keeper that is just starting out might try a simple 30g with a pair of seahorses.  This setup can and
+                              will work, as long as you stick to one pair of seahorses and the tank mate guidelines.  New technology has provided HOB (hang on back) filters, skimmers and
+                              even refugiums that can help with maintenance.  This set up will require more frequent water changes, (approx 20g per week), but provides an easy starting point
+                              for a minimilistic seahorse tank.
+                            </li>
+                            <li id="sump">
+                              Sump underneath - Plumbing in a sump underneath the tank is the preferred method.  The sump provides more water volume to the tank and provides more room
+                              for equipment (including a bigger skimmer, more biological media or even a full refugium).
+                            </li>
+                            <li>
+                              All in ones - just don't do it.
+                            </li>
+                          </ul>
+                        <h4>
+                          Testing
+                        </h4>
+                        <p id="post-text">
+                          Testing your seahorse tank's water will help you initially determine when the tank is safe for seahorses.  After you've cycled the tank, you
+                          should still test the water every week to ensure that all of your parameters are still good. There are a lot of test kits on the market, but
+                          be sure to purchase at least the following:
+                        </p>
+                          <ul>
+                            <li>
+                              Ammonia test kit - after cycling the aquarium, your goal is 0 ammonia.
+                            </li>
+                            <li>
+                              Nitrite test kit - after cycling the aquarium, your goal is 0 nitrite.
+                            </li>
+                            <li>
+                              Nitrate test kit - after cycling the aquarium, your nitrates will fluctuate.  The goal is to stay under 20.  This can be accomplished
+                              by doing a water change whenever the nitrates are too high, using chemical media to absorb excess nutrients or upgrading to add more water
+                              volume, a refugium or algae scrubber.
+                            </li>
+                            <li>
+                              Refractometer - Salinity should stay 28 - 36 ppt.  Testing with a refractometer will help ensure that your top offs and water changes don't
+                              cause salinity to go outside the ideal range.
+                            </li>
+                            <li>
+                              Thermometer - will help you keep the seahorse tank under 74 degrees.  Read more about why this is important in our <a href="#temp">Temperature</a> section.
+                            </li>
+                          </ul>
+                    <h3 id="cycle">
+                      Proper Cycle
+                    </h3>
+                    <div class="center-img">
+                      <img class="post-image3" src="https://cdn.shopify.com/s/files/1/0430/9870/1992/files/2_large.jpg?v=1594713719" alt="erectus image">
+                    </div>
+                    <p id="post-text">An aquarium must be cycled properly before any seahorses or other fish are added.  Ammonia and nitrites that come from
+                      seahorse waste, uneaten food and other decomposition within the tank must be converted to less toxic nitrates because they are very harmful to seahorses.
+                      This is accomplished via the nitrogen cycle.  The image above shows this process within the ocean.  Unfortunately, we have less room in an aquarium, and we have
+                      to make sure the water contains this good (nitrifying) bacteria (and optional plants).  If you're confused, don't worry, we will explain in simple terms below!  Unfortunately, many hobbyists do not understand the nitrogen
+                      cycle and think that letting a tank filled with water sit for 4-6 weeks is all it takes.  Worse yet, some people will put seahorses in a brand new tank
+                      with no waiting period, because they were not told they needed to cycle the tank.  These methods will not end well for a new seahorse keeper.
+                    </p>
+                    <p id="post-text">
+                      The "nitrogen cycle" includes the conversion of ammonia (NH3, very toxic) into nitrite (NO2, which is also toxic), via nitrifying bacteria called
+                      nitrosonomas, and then the conversion of nitrites into nitrates (NO3, much less toxic and removed via filtration and/or water changes) via nitrifying bacteria called
+                      blah blah.  The ammonia and nitrite are harmful to seahorses and other fish, so we need to be sure that the tank is "cycled" before adding them. "A cycled aquarium" indicates that the
+                      tank's biological filter contains enough of both nitrifying bacteria to convert any ammonia into nitrate without reaching toxic levels that would harm
+                      the seahorses.  The "biological filter" is explained a bit more in the <a href="#">biological filter</a> section, but can include rock, media in a sump and
+                      any other porous surface in the aquarium that bacteria can inhabit.  Macroalgae is another form of biological filtration when kept in the tank, in the sump,
+                      or on an algae scrubber.  There are many ways to properly cycle an aquarium, and the time it will take depends
+                      on the method used.  We prefer the "ammonia cycle".  If you prefer to learn via video, Dan from Seahorse Source covered this topic very well in our Wine
+                      Wednesday episode:  <a href="https://www.youtube.com/watch?v=yVvxuAbZ9EE&t=3232s">"Cycling a seahorse tank"</a>, covering all of the specifics!
+                    </p>
+                    <p id="post-text">
+                        "The Ammonia Cycle" includes adding ammonia to the tank to cycle the tank, ensuring that the tank can cycle through 1ppm of ammonia in 24 hours. This method
+                         ensures that that the tank can handle seahorses and their messy eating habits and organic bioload!
+                         What you will need to do the ammonia cycle include:
+                         <ul>
+                           <li>
+                             A refractometer to test salinity
+                           </li>
+                           <li>
+                             Test kits for ph, ammonia, nitrite and nitrate
+                           </li>
+                           <li>
+                             Plain, clear, unscented ammonia from a store, or purchase some from
+                          <a hrefhttps://store.drtimsaquatics.com/Ammonium-Chloride-Solution-for-Fishless-Cycling.htmlDr. Tim</a>.
+                           </li>
+                         </ul>
+                    </p>
+                    <p id="post-text">
+                         The steps and explanation for using the ammonia cycle on an aquarium with dry rock or new media are listed here:
+                        <ol>
+                          <li>Check parameters to begin with:  test PH (8-8.3), salinity (1.020 and 1.025), temperature (low 80s because bacteria grow faster at higher temps),
+                          and ammonia/nitrite levels (should be 0)</li>
+                          <li>Add 1ml of ammonia to the tank slowly, testing every 20 minutes until the ammonia test indicates 1ppm of ammonia in the tank.  Keep track of
+                          the ammont of ammonia you needed to add to reach 1ppm.</li>
+                          <li>After reaching 1ppm ammonia, continue to test daily until the ammonia test reads zero.  Once ammonia is zero, test for nitrites.  The bacteria
+                          that convert nitrite into nitrate take longer to grow, so don't add any more ammonia until nitrite test reads zero also</li>
+                          <li>When nitrite test reads zero, add the amount of ammonia to equal 1ppm (that you kept track of in step 2)</li>
+                          <li>Continue this process until you can add 1ppm ammonia to the tank, and get 0ppm readings of ammonia AND nitrites 24 hours later.  The tank is cycled
+                          for seahorses when this is accomplished.</li>
+                          <li>Remember that if it takes a few weeks to get your seahorses, you must keep adding ammonia to feed the good bacteria and keep it healthy.  We recommend adding 1ppm of
+                          ammonia the day before you add seahorses, to ensure that the tank still has the proper ammount of nitrifying bacteria.</li>
+                        </ol>
+                    </p>
+                    <p id="post-text">
+                        It's seriously that simple to cycle a tank with ammonia, but so very important.  Other options to speed up the ammonia cycle (that will add more of the nitrifying bacteria that you are trying to grow in the tank) include:
+                        <ol>
+                          <li>
+                            Adding media from an existing tank.  If you already have another seahorse or reef tank, you can take media from that tank (or it's sump) to help
+                            "seed" your new tank.  There are some dangers in using this "speed up" method, as any pathogens in the first tank will transfer to the second.  Either
+                            way, moving media from one tank to another will mean that the tank gains beneficial bacteria.
+                          </li>
+                          <li>
+                            Adding pre-cycled media.  Very easily, you can keep any type of media (dry rock, brightwell bricks, or any other porous media) in a bucket.
+                            The bucket needs a power head or some other flow to keep the oxygen moving through the media (bacteria need oxygen to survive), and the addition
+                            of ammonia to "feed" the bacteria.  Keeping pre-cycled media isn't necessary for the average hobbyist, but if you intend to breed or set up
+                            new tanks constantly, pre-cycled media can be very helpful.
+                          </li>
+                          <li>Adding bottled beneficial bacteria.  This adds more of the good, nitrifying bacteria that you need.  However, you must pay attention to the type of bottled
+                        bacteria that you're buying and the expiration date on the bottle.  We recommend <a href="https://fritzaquatics.com/products/fritzzyme-7-freshwater">FritZyme
+                        </a> or <a href="https://store.drtimsaquatics.com/nitrifying-bacteria.html">Dr. Tim's one and only</a>.  Read <a href="https://www.drtimsaquatics.com/resources/library/quick-guide-to-fishless-cycling-with-one-and-only/">Dr. Tim's Guide to cycling with
+                        bacteria</a> and his article about <a href="https://www.drtimsaquatics.com/resources/fishless-cycling/"> why ammonia cycling is best to learn more about how
+                        bottled bacteria can speed up an ammonia cycle.</a>
+                          </li>
+                        </ol>
+                    </p>
+                    <p id="post-text">
+                        Once a seahorse tank is cycled, the ammonia and nitrite readings should never be < 25ppm.  Continue to test on a weekly basis, and any
+                        time that seahorses act abnormally.  If you're ever in an emergency situation with high ammonia or nitrite levels, either do a water change to lower
+                        the levels, or use <a href="https://www.seachem.com/prime.php">Seachem Prime</a> to buy some time.
+                    </p>
+                    </h3>
+                    <h3 id="temp">
+                      Temperature
+                    </h3>
+                    <div class="center-img">
+                      <img class="post-image3" src="https://cdn.pixabay.com/photo/2019/06/23/15/42/thermometer-4294021_960_720.jpg">
+                    </div>
+                      <p id="post-text">
+                        Temperature in a seahorse tank is pretty important, because bacteria grows at a slower rate in
+                        lower temps.  Seahorses' immune systems are different than other fish, and they are prone to bacterial infections.
+                        By keeping the temperature low, seahorses are less likely to have bacterial issues.  Unfortunately, this makes it difficult to add other
+                        coral or fish in with the seahorses, because they prefer higher temps.  The ideal temperature for a seahorse tank is below than 74F.  Equally important is making sure the temperature in the tank
+                        doesn't fluctuate.  If you keep your home at a steady temp year-round, and the tank temp stays below 74F, you're
+                        in good shape!  But if you live in a colder climate, you might need a heater.  In a warm climate, you might need a chiller.  A controller can
+                        help you maintain a temp and correct the problem if temp falls too low or rises too high.
+                      </p>
+                    </h3>
+                    <h3 id="flow">
+                      Flow
+                    </h3>
+                    <div class="center-img">
+                      <img class="post-image3" src="https://cdn.pixabay.com/photo/2014/03/02/01/36/water-277883_960_720.jpg">
+                    </div>
+                      <p id="post-text">
+                        Seahorse articles and posts from 10 years ago told us that seahorses needed a "low flow environment".  But,
+                        we've learned that they actually enjoy a higher rate of flow.  My own personal experience told me all that I needed to know!  I set up my first seahorse
+                        tank with no powerheads or wavemakers, relying on the HOB filter to provide surface agitation.  My seahorses didn't move around much.  They seemed....bored.  When
+                        nuisance algae began to cover my tank, I was advised to add more flow.  After adding a simple powerhead, my seahorses became so much more active!  They were literally
+                        dancing in the flow!  Years later, I would never set up a seahorse tank without a lot of flow (leaving low flow spots via aquascape for any seahorses who want to 'chill').
+                      </p>
+                      <p id="post-text">A seahorse tank should have flow that will remove detritus from all areas of the tank,
+                        but also provide areas of low flow for "resting".  This can be accomplished by using two wavemakers or powerheads, positioned at the bottom and middle
+                        of the aquarium on opposite sides, with a strong pump in the sump providing surface agitation.  All powerheads or wavemakers must be covered to ensure that seahorse's don't
+                        hitch on them and get their tails hurt, but seahorses will be much less active without adequate flow.  The recommendation today is 15-20+ turnover
+                         rate.  We also recommend achieving this goal via multiple methods, such as a 30g tank with a 300 gph pump and (2) 150 gph wave makers.
+                         This would provide 20 times turnover.  After you've added seahorses to the tank, watch to be sure that they can still swim freely, but don't be concerned if
+                         you notice "playing in the flow" (seahorses will often hitch onto a covered wave maker and get pushed across the tank, only to swim back to the same
+                         wavemaker.  They LIKE playing in the flow).  Only lower the flow rate if seahorses are not moving around because the flow rate is too high.
+                      </p>
+                    </h3>
+                    <h3 id="mates">
+                      Tank Mates
+                    </h3>
+                    <div class="center-img">
+                      <img class="post-image3" src="https://images.unsplash.com/photo-1498574932731-e711f7092d07?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80" alt="erectus image">
+                    </div>
+                      <p id="post-text">
+                        Tank mates for seahorses is a highly debated topic.  Many people argue about many species of coral and fish that they believe compliment a seahorse tank.
+                        The rule of thumb is to never mix any fish that is aggressive or fast eating, nor any coral that might sting or let off toxins.  The reason for limiting fish tank mates
+                        revolves around seahorse eating habits.  Some species of seahorses take food more readily than others, but all species are slow eaters.  They like to look over a piece
+                        of food and ... well ... pretend that they're capturing prey via their camoflauge and skillful attack.  Aggressive fish will obviously bully a slow moving seahorse,
+                        but even aggressive eaters will cause problems.  A calm clownfish for example might seem fine with seahorses, but they will eat all of the food before seahorses even
+                        come close to it.  Clownfish also become more aggressive later in life, as they turn into a breeders (If you insist on keeping a clownfish with a seahorse, please
+                        limit the number of clowns to 1).
+                      </p>
+                      <p id="post-text">
+                        Coral in a seahorse tank is less likely to cause problems, because the rules are pretty clear:
+                        <ol>
+                          <li>
+                            SPS coral - don't do well in a seahorse tank.  Seahorses will hitch upon anything and everything that their tail happens to find.  So I wouldn't put an expensive
+                            sps coral near a seahorse!  The seahorse will hitch for quite a while in some instances, damaging polyps and blocking them from light.  Sps also prefer a much
+                            higher temperature and cleaner tank than seahorses.  It's just not a good plan.
+                          </li>
+                          <li>
+                            LPS coral - must be researched!  Anything that can sting (even late night stingers like torches) won't work in a seahorse tank.  Seahorses have "skin" versus scales and
+                            when they get stung, it's much more likely to turn into an infection.
+                          </li>
+                          <li>
+                            Soft coral - most softies work well in a seahorse tank.  In fact, softies like the dirty tank that seahorses provide, along with being able to handle the lower temperatures.
+                            While you should research the particular soft coral you want add to your seahorse tank, to be sure they are not known for toxins (like palys), they will usually be a nice fit.
+                          </li>
+                          <li>
+                            Recommendations - Gorgonians are beautiful, flowy and work well in a seahorse tank.  Soft corals like leathers, mushrooms, xenia and others that are less likely to release
+                            toxins are welcome in a seahorse tank!  Gobies, dragonets, snails and many other slow moving, slow eating fish can be great tank mates!  If you want to keep your seahorses safe, provide them with a tank dedicated to them.  It's pretty simple to set up a seahorse only
+                            tank, but for those that want more, we'll provide a tank mate list soon!
+                          </li>
+                        </ol>
+                      </p>
+                    </h3>
+                    <h3 id="feeding">
+                      Feeding
+                    </h3>
+                    <div class="center-img">
+                      <img class="post-image3" src="https://ars.els-cdn.com/content/image/3-s2.0-B9780123706263001484-gr1.jpg?_">
+                    </div>
+                      <p id="post-text">
+                        Seahorses in the wild eat live food continuously.  They need constant nourishment to stay healthy.  Captive bred seahorses are trained to eat frozen
+                        foods, but they do not have the gut associated
+                        lymphoid tissue in their digestive tract that other fish have to protect them from bacteria on decaying food. Seahorses are particularly susceptible
+                        to bacteria like Vibrio and Mycobacterium that grow quickly on decaying organic matter.  Any food that is bad when purchased or left at the bottom of the tank
+                        for longer than 10 minutes will likely cause a seahorse to have bacterial issues.  So it's very important to follow these guidelines regarding frozen foods:
+                      </p>
+                        <ol>
+                          <li>
+                            Check the color of frozen food - When you purchase frozen mysis, pay attention to the color.
+                            Frozen mysis should be white, not brown
+                          </li>
+                          <li>
+                            Check the expiration date on frozen food - obviously don't buy outdated foods, but also check if the food looks "thawed and refrozen".  If
+                            there are any bubbles in the packaging or obvious signs (like the food is all pushed to one area of the container and refrozen), don't buy it.
+                          </li>
+                          <li>
+                            Remove uneaten food within 10 minutes - if there is any food remaining in the tank after ten minutes, siphon it out!  Your seahorse might eat it
+                            later, but the bacteria that has grown upon it might make him/her sick.
+                          </li>
+                        </ol>
+                      <p id="post-text">
+                        As for the types of food to feed seahorses, we recommend the following:
+                      </p>
+                        <ol>
+                          <li>
+                            Frozen Mysis - Contain everything that a seahorse needs to stay healthy!  Just be sure to follow the guidelines above to ensure that you provide
+                            your seahorses quality frozen mysis.
+                          </li>
+                          <li>
+                            Gut Loaded Artemia - As a treat for your seahorses, you can buy live artemia (brine shrimp) and gut load them with probiotics and
+                            other suppliments that will provide seahorses with "boost" to their system! We will cover this in more detail in a future article.
+                          </li>
+                        </ol>
+                    <h3 id="maintenance">
+                      Maintenance
+                    </h3>
+                    <div class="center-img">
+                      <img class="post-image3" src="https://cdn.pixabay.com/photo/2018/04/26/05/17/plastic-3351160__340.jpg">
+                    </div>
+                      <p id="post-text">
+                        Your maintenance routine will depend largely on your set up.  If you have a large tank with a lot of biological and mechanical filtration, your maintenance
+                        routine will differ.  Testing is the best way to determine how your filtration is working and what you need to change.  They typical routine includes weekly
+                        testing to determine your parameter levels, followed by a 20% water change.  If your tests conclude that your parameters are rising higher each week, you might
+                        need to do a higher percentage of water change, or add more biological/mechanical filtration.  The bigger the tank (with more water volume), the less likely you'll
+                        see problems creep up.
+                      </p>
+                      <p id="post-text">
+                        As mentioned in the <a href="#feeding">Feeding section</a>, a great way to keep your seahorse tank running smoothly is to remove any uneaten food. Seahorses WILL
+                        eat leftovers an hour later, that are already covered in bad bacteria.  On that happy note, we will see you in the next article!
+                      </p>
+                  </div>
+              </div>
+        </div>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="app.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+      </main>
+    <div id="dynamicfooter"></div>
+  </body>
+</html>
